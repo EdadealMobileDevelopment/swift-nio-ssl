@@ -73,6 +73,9 @@
 #include "../service_indicator/internal.h"
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 int rsa_check_public_key(const RSA *rsa) {
   if (rsa->n == NULL || rsa->e == NULL) {

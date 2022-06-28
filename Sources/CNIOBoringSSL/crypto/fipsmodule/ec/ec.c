@@ -80,6 +80,9 @@
 #include "../bn/internal.h"
 #include "../delocate.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 static void ec_point_free(EC_POINT *point, int free_group);
 

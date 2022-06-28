@@ -56,6 +56,10 @@
 
 #include <CNIOBoringSSL_bn.h>
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
+
 #include <limits.h>
 #include <string.h>
 

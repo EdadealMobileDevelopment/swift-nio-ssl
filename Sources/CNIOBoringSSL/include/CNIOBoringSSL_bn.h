@@ -126,8 +126,6 @@
 #include "CNIOBoringSSL_base.h"
 #include "CNIOBoringSSL_thread.h"
 
-#include <inttypes.h>  // for PRIu64 and friends
-#include <sys/types.h>
 #include <stdio.h>  // for FILE*
 
 #if defined(__cplusplus)

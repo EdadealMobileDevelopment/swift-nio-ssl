@@ -171,6 +171,9 @@
 #include "../crypto/internal.h"
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 BSSL_NAMESPACE_BEGIN
 

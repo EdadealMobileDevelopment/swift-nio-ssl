@@ -67,6 +67,9 @@
 #include "../service_indicator/internal.h"
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 // digest_to_scalar interprets |digest_len| bytes from |digest| as a scalar for
 // ECDSA.

@@ -117,6 +117,9 @@
 #include "internal.h"
 #include "../../internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 #define BN_BLINDING_COUNTER 32
 

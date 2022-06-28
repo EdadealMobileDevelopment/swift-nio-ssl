@@ -74,6 +74,9 @@
 #include "../internal.h"
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 static char *strip_spaces(char *name);
 static int sk_strcmp(const OPENSSL_STRING *a, const OPENSSL_STRING *b);

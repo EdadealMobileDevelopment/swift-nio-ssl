@@ -75,6 +75,9 @@
 #include "../delocate.h"
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 int ec_GFp_mont_group_init(EC_GROUP *group) {
   int ok;

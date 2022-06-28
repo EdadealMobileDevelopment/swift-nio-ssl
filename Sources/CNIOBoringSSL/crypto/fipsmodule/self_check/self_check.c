@@ -41,6 +41,9 @@
 #include "../service_indicator/internal.h"
 #include "../tls/internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 // MSVC wants to put a NUL byte at the end of non-char arrays and so cannot
 // compile the real logic.

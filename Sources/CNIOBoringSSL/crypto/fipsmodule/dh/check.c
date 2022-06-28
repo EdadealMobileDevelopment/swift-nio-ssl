@@ -58,6 +58,9 @@
 
 #include <CNIOBoringSSL_bn.h>
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 int DH_check_pub_key(const DH *dh, const BIGNUM *pub_key, int *out_flags) {
   *out_flags = 0;

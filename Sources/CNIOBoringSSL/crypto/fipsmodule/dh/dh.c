@@ -69,6 +69,9 @@
 #include "../service_indicator/internal.h"
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 #define OPENSSL_DH_MAX_MODULUS_BITS 10000
 

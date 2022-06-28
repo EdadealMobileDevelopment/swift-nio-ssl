@@ -69,6 +69,10 @@
 
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
+
 int ASN1_item_verify(const ASN1_ITEM *it, const X509_ALGOR *a,
                      const ASN1_BIT_STRING *signature, void *asn,
                      EVP_PKEY *pkey) {

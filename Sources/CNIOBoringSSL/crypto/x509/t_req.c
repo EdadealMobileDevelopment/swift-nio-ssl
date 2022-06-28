@@ -66,6 +66,9 @@
 
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 int X509_REQ_print_fp(FILE *fp, X509_REQ *x) {
   BIO *bio = BIO_new_fp(fp, BIO_NOCLOSE);

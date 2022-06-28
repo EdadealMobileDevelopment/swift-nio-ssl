@@ -32,6 +32,10 @@
 #include "internal.h"
 #include "p256-nistz.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
+
 #if !defined(OPENSSL_NO_ASM) &&  \
     (defined(OPENSSL_X86_64) || defined(OPENSSL_AARCH64)) &&    \
     !defined(OPENSSL_SMALL)

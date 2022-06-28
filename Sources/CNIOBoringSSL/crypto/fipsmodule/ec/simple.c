@@ -76,6 +76,9 @@
 #include "internal.h"
 #include "../../internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 // Most method functions in this file are designed to work with non-trivial
 // representations of field elements if necessary (see ecp_mont.c): while

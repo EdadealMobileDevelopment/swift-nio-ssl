@@ -72,6 +72,9 @@
 
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 size_t ec_point_to_bytes(const EC_GROUP *group, const EC_AFFINE *point,
                          point_conversion_form_t form, uint8_t *buf,

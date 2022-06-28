@@ -29,6 +29,9 @@
 
 #include "internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 typedef int (*hash_t_func_t)(const EC_GROUP *group, EC_RAW_POINT *out,
                              const uint8_t t[TRUST_TOKEN_NONCE_SIZE]);

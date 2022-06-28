@@ -113,6 +113,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
+
 #include <CNIOBoringSSL_err.h>
 #include <CNIOBoringSSL_mem.h>
 #include <CNIOBoringSSL_thread.h>

@@ -52,6 +52,10 @@
 
 #include <CNIOBoringSSL_bn.h>
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
+
 // TODO(davidben): Get this file working on MSVC x64.
 #if !defined(OPENSSL_NO_ASM) && defined(OPENSSL_X86_64) && \
     (defined(__GNUC__) || defined(__clang__))

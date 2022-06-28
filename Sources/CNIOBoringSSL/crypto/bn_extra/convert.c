@@ -61,6 +61,10 @@
 #include <limits.h>
 #include <stdio.h>
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
+
 #include <CNIOBoringSSL_bio.h>
 #include <CNIOBoringSSL_bytestring.h>
 #include <CNIOBoringSSL_err.h>

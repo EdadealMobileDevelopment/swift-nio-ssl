@@ -111,6 +111,10 @@
 #include <limits.h>
 #include <string.h>
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
+
 #include <CNIOBoringSSL_err.h>
 #include <CNIOBoringSSL_rand.h>
 #include <CNIOBoringSSL_type_check.h>

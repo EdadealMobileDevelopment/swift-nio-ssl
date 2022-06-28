@@ -70,6 +70,9 @@
 #include "../service_indicator/internal.h"
 #include "../../internal.h"
 
+#include <inttypes.h>  // for PRIu64 and friends
+#include <sys/types.h>
+#include <stdio.h>  // for FILE*
 
 #define RSA_PKCS1_PADDING_SIZE 11
 
